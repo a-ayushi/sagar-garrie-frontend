@@ -1,2 +1,3 @@
-# sagar-garrie-frontend
-Frontend of Sagar Garrie website built using React.js.
+# Sagar Garrie Frontend
+Built using React.js, HTML, and CSS.
+Features: menu display, table booking, and payment integration.
