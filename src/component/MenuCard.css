@@ -1,0 +1,62 @@
+/* Overall container */
+.menu-container {
+    background: #f9f6f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Overlay navigation */
+  .menu-overlay-nav {
+    position: fixed;
+    top: 20px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 30px;
+    color: #5d4634;
+    display: flex;
+    z-index: 999;
+  }
+  
+  .menu-overlay-nav span {
+    cursor: pointer;
+  }
+  
+  /* Flipbook wrapper */
+  .flipbook-wrapper {
+    margin-top: 80px;
+  }
+  
+  .menu-page {
+    background: #fffaf3;
+    border: 1px solid #e2d5c4;
+    font-family: "Georgia", serif;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .menu-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4e3d2e;
+    border-bottom: 1px solid #cbb9a4;
+    padding-bottom: 10px;
+  }
+  
+  .menu-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-page li {
+    font-size: 20px;
+    color: #4e3d2e;
+    margin: 10px 0;
+  }
+  

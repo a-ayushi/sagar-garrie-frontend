@@ -1,0 +1,260 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('/masala-dosa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: heroBackgroundShift 20s ease-in-out infinite;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(237, 122, 30, 0.8) 0%, 
+    rgba(222, 95, 20, 0.7) 50%, 
+    rgba(184, 72, 19, 0.8) 100%
+  );
+  backdrop-filter: blur(1px);
+}
+
+@keyframes heroBackgroundShift {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+  }
+}
+
+.hero-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #ffffff, #fef7ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Centered & Responsive Hero Buttons */
+/* CTA Footer Wrapper */
+/* Hero Footer Container */
+.hero-cta-footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(237, 122, 30, 0.85) 0%,
+    rgba(222, 95, 20, 0.8) 50%,
+    rgba(184, 72, 19, 0.85) 100%
+  );
+  backdrop-filter: blur(8px);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer Engaging Text */
+.hero-footer-line {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Keep buttons responsive */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary,
+.hero-btn-secondary {
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  min-width: 180px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hero-btn-primary {
+  background: rgba(255, 123, 40, 0.9);
+  color: #fff;
+}
+
+.hero-btn-primary:hover {
+  background: rgba(255, 123, 40, 1);
+  transform: translateY(-2px);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  border: 2px solid rgba(255, 123, 40, 0.9);
+  /* color: rgba(255, 123, 40, 0.9);
+  */
+  color:#fff;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 123, 40, 0.9);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+.hero-features {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.hero-feature:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero-feature-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
+}
+
+.hero-feature-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+
+.hero-scroll-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .hero-buttons {
+    flex-direction: row;
+    /* flex-direction: column; */
+    gap: 0.8rem;
+  }
+  
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.5rem;
+  }
+  
+  .hero-container {
+    padding: 0 2rem;
+  }
+}

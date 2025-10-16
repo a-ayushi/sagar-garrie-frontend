@@ -1,0 +1,157 @@
+/* src/component/admin/admin.css */
+
+.admin-dashboard {
+  max-width: 1100px;
+  margin: 16px auto;
+  padding: 20px;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.admin-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #e6d6c0;
+  background: #fff8f0;
+}
+
+.refresh-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #ff7f50;
+  color: white;
+  cursor: pointer;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f2e7da;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.admin-table th {
+  background: #fff4e8;
+  color: #333;
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.notes-cell {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-cell {
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.status-pending { background: #fff7d6; color: #8a6d00; }
+.status-confirmed { background: #dff0d8; color: #2f6f2f; }
+.status-rejected { background: #f8d7da; color: #8b1a1a; }
+
+.actions-col {
+  min-width: 180px;
+  text-align: center;
+}
+
+
+
+
+.admin-error {
+  background: #fdecea;
+  color: #8b1a1a;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.admin-bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+
+.admin-bookings-table th,
+.admin-bookings-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.admin-bookings-table th {
+  background-color: #f4f4f4;
+}
+
+.btn-confirm {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background-color: #45a049;
+}
+
+.btn-cancel:hover {
+  background-color: #d32f2f;
+}
+
+.booking-filters {
+  margin-bottom: 15px;
+}
+
+.booking-filters select {
+  padding: 5px 10px;
+}
